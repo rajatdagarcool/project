@@ -1,0 +1,75 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('/home/ec/rust/static/images/background.jpg'); /* Background image for the page */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header with an image */
+header {
+    background-image: url('/home/ec/rust/static/images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+/* Image as a part of an icon next to text */
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Footer with a background image */
+footer {
+    background-image: url('/home/ec/rust/static/images/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Button with an icon */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
