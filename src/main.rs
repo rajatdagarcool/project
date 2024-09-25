@@ -1,13 +1,23 @@
-use warp::Filter;
-//using custom headers
-#[tokio::main]
-async fn main(){
-    let html_route = warp::path("complex").map(|| {
-        warp::reply::with_header(
-            warp::reply::with_status("Complex Response", warp::http::StatusCode::CREATED),
-            "X-Complex-Header", "ComplexValue")
-    });
-
-    warp::serve(html_route).run(([127,0,0,1],8080)).await;
+enum Message{
+    Quit,
+    Move{ x: i32, y: i32},
+    Write(String),
+    ChangeColor(u8, u8,u8),
 }
 
+fn process_message(msg: Message){
+    match msg{
+        Message::Quit => println!("Quit message Received"),
+        Message::Move{x, y} => println!("Move to position: ({} {})", x,y),
+        Message::Write(text) => println!("Message: {}", text),
+        Message::ChangeColor(r,g,b) => println!("Change color to RGB ({}, {},{})", r,g,b),
+    }
+}
+
+fn main(){
+    let msg1 = Message::Move{ x: 10, y: 20};
+    let msg2 = Message::Write(String::from("Hello, world!"));
+
+    process_message(msg1);
+    process_message(msg2);
+}
