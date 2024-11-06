@@ -1,0 +1,1 @@
+warp::Server<warp::filter::recover::Recover<warp::filter::and_then::AndThen<Exact<warp::path::internal::Opaque<&str>>, {closure@src/main.rs:6:24: 6:26}>, fn(Rejection) -> impl Future<Output = Result<impl Reply, Rejection>> {handle_rejection}>>

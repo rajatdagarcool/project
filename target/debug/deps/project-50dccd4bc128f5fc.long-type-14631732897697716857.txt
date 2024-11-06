@@ -1,0 +1,1 @@
+warp::Server<warp::filter::or::Or<warp::filter::map::Map<impl warp::Filter + warp::filter::FilterBase<Extract = (), Error = Rejection> + Copy, {closure@src/main.rs:11:14: 11:16}>, warp::filter::and::And<Exact<warp::path::internal::Opaque<&str>>, impl warp::filter::FilterClone + warp::filter::FilterBase<Extract = (warp::fs::File,), Error = Rejection>>>>

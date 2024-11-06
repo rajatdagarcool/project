@@ -1,0 +1,1 @@
+impl warp::filter::FilterClone + warp::filter::FilterBase<Extract = (filters::fs::File,), Error = Rejection>

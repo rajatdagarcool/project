@@ -1,0 +1,1 @@
+warp::Server<warp::filter::map::Map<impl warp::Filter + warp::filter::FilterBase<Extract = (), Error = Rejection> + Copy, {closure@src/main.rs:9:14: 9:16}>>

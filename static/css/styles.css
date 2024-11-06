@@ -1,0 +1,21 @@
+body{
+	font-family: sans-serif, Arial;
+	display: flex;
+	margin: 20px;
+	padding: 20px;
+}
+main{
+	flex: 70%;
+	padding: 20px;
+}
+
+aside{
+	flex: 30%;
+	background-color: #f4f4f4;
+	padding: 20px;
+	margin-left: 20px;
+	border-left: 2px solid #ccc;
+}
+
+
+
